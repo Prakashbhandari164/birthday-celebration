@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#170b2e">
+  <title>Birthday Celebration 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <main class="card">
+    <p class="eyebrow">A LITTLE MOMENT OF MAGIC ✨</p>
+    <h1>Happy Birthday<span class="sparkle">!</span></h1>
+    <p class="subtitle">Today is all about celebrating <strong id="nameDisplay">YOU</strong>.</p>
+
+    <section class="cake-area" aria-label="Animated birthday cake">
+      <div class="balloon balloon-left">🎈</div>
+      <div class="balloon balloon-right">🎈</div>
+      <div class="cake">
+        <div class="candles"><span class="candle"><i></i></span><span class="candle"><i></i></span><span class="candle"><i></i></span></div>
+        <div class="icing"></div><div class="cake-top"></div><div class="cake-middle"></div><div class="cake-bottom"></div>
+        <div class="plate"></div>
+      </div>
+    </section>
+
+    <p class="message" id="message">May your year be filled with laughter, beautiful surprises, and dreams coming true. You deserve all the good things life has to offer! 💖</p>
+
+    <div class="actions">
+      <button id="celebrateBtn" class="primary">🎉 Celebrate!</button>
+      <button id="wishBtn" class="secondary">💌 Make a wish</button>
+    </div>
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <section class="personalize">
+      <h2>Make it personal</h2>
+      <div class="form-row">
+        <label for="personName">Birthday person's name</label>
+        <input id="personName" type="text" maxlength="40" placeholder="Enter a name">
+      </div>
+      <div class="form-row">
+        <label for="customMessage">Your birthday message</label>
+        <textarea id="customMessage" rows="3" maxlength="240" placeholder="Write a kind birthday wish..."></textarea>
+      </div>
+      <button id="applyBtn" class="secondary">✨ Update greeting</button>
+    </section>
+    <footer>Made with 🎂 and good vibes · <span>Birthday Celebration</span></footer>
+  </main>
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
